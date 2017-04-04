@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Goal Scorer</string>
+    <string name="penalty">Penalty:</string>
+    <string name="foul">Foul:</string>
+</resources>
