@@ -10,4 +10,5 @@
     <dimen name="buttonMarginLeft">24dp</dimen>
     <dimen name="buttonMarginRight">24dp</dimen>
     <dimen name="buttonMarginBottom">8dp</dimen>
+    <dimen name="buttonPadding">8dp</dimen>
 </resources>

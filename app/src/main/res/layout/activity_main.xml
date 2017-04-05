@@ -19,8 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="0dp">
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -68,7 +67,7 @@
                     android:padding="8dp"
                     android:text="@string/foul"
                     android:textColor="#424242"
-                    android:textSize="15dp"/>
+                    android:textSize="@dimen/secondaryText"/>
 
                 <TextView
                     android:id="@+id/team_a_foul"
@@ -77,7 +76,7 @@
                     android:fontFamily="sans-serif-medium"
                     android:text="0"
                     android:textColor="#424242"
-                    android:textSize="15dp"/>
+                    android:textSize="@dimen/secondaryText"/>
 
             </LinearLayout>
 
@@ -92,10 +91,10 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center_horizontal"
-                    android:padding="8dp"
+                    android:padding="@dimen/buttonPadding"
                     android:text="@string/penalty"
                     android:textColor="#424242"
-                    android:textSize="15dp"/>
+                    android:textSize="@dimen/secondaryText"/>
 
                 <TextView
                     android:id="@+id/team_a_penalty"
@@ -106,7 +105,7 @@
                     android:gravity="center_horizontal"
                     android:text="0"
                     android:textColor="#424242"
-                    android:textSize="15sp"/>
+                    android:textSize="@dimen/secondaryText"/>
 
             </LinearLayout>
 
@@ -215,7 +214,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center_horizontal"
-                    android:padding="8dp"
+                    android:padding="@dimen/buttonPadding"
                     android:text="@string/penalty"
                     android:textColor="#424242"
                     android:textSize="@dimen/secondaryText"/>
