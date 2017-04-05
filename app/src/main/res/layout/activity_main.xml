@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="@dimen/footballMargin"
         android:alpha="0.4"
         android:src="@drawable/football"/>
 
@@ -33,14 +33,14 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
-                android:padding="16dp"
+                android:padding="@dimen/padding"
                 android:text="@string/team_a"
-                android:textColor="#424242"
+                android:textColor="@color/primaryTextColor"
                 android:textSize="@dimen/titletext"/>
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="80dp"
+                android:layout_height="@dimen/logoheight"
                 android:src="@drawable/norwich"/>
 
             <TextView
@@ -51,7 +51,7 @@
                 android:gravity="right"
                 android:paddingRight="@dimen/scorePadding"
                 android:text="0"
-                android:textColor="#000000"
+                android:textColor="@color/scoreTextColor"
                 android:textSize="@dimen/scoreText"/>
 
             <LinearLayout
@@ -64,9 +64,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:padding="8dp"
+                    android:padding="@dimen/secondaryTextPadding"
                     android:text="@string/foul"
-                    android:textColor="#424242"
+                    android:textColor="@color/primaryTextColor"
                     android:textSize="@dimen/secondaryText"/>
 
                 <TextView
@@ -75,7 +75,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:text="0"
-                    android:textColor="#424242"
+                    android:textColor="@color/primaryTextColor"
                     android:textSize="@dimen/secondaryText"/>
 
             </LinearLayout>
@@ -91,20 +91,20 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center_horizontal"
-                    android:padding="@dimen/buttonPadding"
+                    android:padding="@dimen/secondaryTextPadding"
                     android:text="@string/penalty"
-                    android:textColor="#424242"
+                    android:textColor="@color/primaryTextColor"
                     android:textSize="@dimen/secondaryText"/>
 
                 <TextView
                     android:id="@+id/team_a_penalty"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
+                    android:padding="@dimen/secondaryTextPadding"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center_horizontal"
                     android:text="0"
-                    android:textColor="#424242"
+                    android:textColor="@color/primaryTextColor"
                     android:textSize="@dimen/secondaryText"/>
 
             </LinearLayout>
@@ -154,7 +154,7 @@
                 android:gravity="center_horizontal"
                 android:padding="@dimen/padding"
                 android:text="@string/team_b"
-                android:textColor="#424242"
+                android:textColor="@color/primaryTextColor"
                 android:textSize="@dimen/titletext"/>
 
             <ImageView
@@ -172,7 +172,7 @@
                 android:paddingBottom="@dimen/paddingBottom"
                 android:paddingLeft="@dimen/scorePadding"
                 android:text="0"
-                android:textColor="#000000"
+                android:textColor="@color/scoreTextColor"
                 android:textSize="@dimen/scoreText"/>
 
             <LinearLayout
@@ -186,9 +186,9 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center_horizontal"
-                    android:padding="8dp"
+                    android:padding="@dimen/secondaryTextPadding"
                     android:text="@string/foul"
-                    android:textColor="#424242"
+                    android:textColor="@color/primaryTextColor"
                     android:textSize="@dimen/secondaryText"/>
 
                 <TextView
@@ -198,7 +198,7 @@
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
                     android:text="0"
-                    android:textColor="#424242"
+                    android:textColor="@color/primaryTextColor"
                     android:textSize="@dimen/secondaryText"/>
 
             </LinearLayout>
@@ -214,19 +214,19 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center_horizontal"
-                    android:padding="@dimen/buttonPadding"
+                    android:padding="@dimen/secondaryTextPadding"
                     android:text="@string/penalty"
-                    android:textColor="#424242"
+                    android:textColor="@color/primaryTextColor"
                     android:textSize="@dimen/secondaryText"/>
 
                 <TextView
                     android:id="@+id/team_b_penalty"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginBottom="@dimen/secondaryTextPadding"
                     android:fontFamily="sans-serif-medium"
                     android:text="0"
-                    android:textColor="#424242"
+                    android:textColor="@color/primaryTextColor"
                     android:textSize="@dimen/secondaryText"/>
 
             </LinearLayout>

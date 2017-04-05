@@ -11,4 +11,6 @@
     <dimen name="buttonMarginRight">24dp</dimen>
     <dimen name="buttonMarginBottom">8dp</dimen>
     <dimen name="buttonPadding">8dp</dimen>
+    <dimen name="footballMargin">70dp</dimen>
+    <dimen name="secondaryTextPadding">8dp</dimen>
 </resources>
