@@ -35,9 +35,9 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:padding="16dp"
-                android:text="Norwich City"
+                android:text="@string/team_a"
                 android:textColor="#424242"
-                android:textSize="18dp"/>
+                android:textSize="@dimen/titletext"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -50,11 +50,10 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
                 android:gravity="right"
-                android:paddingBottom="0dp"
-                android:paddingRight="12dp"
+                android:paddingRight="@dimen/scorePadding"
                 android:text="0"
                 android:textColor="#000000"
-                android:textSize="56dp"/>
+                android:textSize="@dimen/scoreText"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -107,36 +106,36 @@
                     android:gravity="center_horizontal"
                     android:text="0"
                     android:textColor="#424242"
-                    android:textSize="15dp"/>
+                    android:textSize="15sp"/>
 
             </LinearLayout>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginBottom="@dimen/buttonMarginBottom"
+                android:layout_marginLeft="@dimen/buttonMarginLeft"
+                android:layout_marginRight="@dimen/buttonMarginRight"
                 android:onClick="addGoalForTeamA"
-                android:text="Goal"/>
+                android:text="@string/goal_button"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginBottom="@dimen/buttonMarginBottom"
+                android:layout_marginLeft="@dimen/buttonMarginLeft"
+                android:layout_marginRight="@dimen/buttonMarginRight"
                 android:onClick="addFoulForTeamA"
-                android:text="Foul"/>
+                android:text="@string/foul_button"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginBottom="@dimen/buttonMarginBottom"
+                android:layout_marginLeft="@dimen/buttonMarginLeft"
+                android:layout_marginRight="@dimen/buttonMarginRight"
                 android:onClick="addPenaltyForTeamA"
-                android:text="Penalty"/>
+                android:text="@string/penalty_button"/>
         </LinearLayout>
 
         <LinearLayout
@@ -154,14 +153,14 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
-                android:padding="16dp"
-                android:text="Ipswich Town"
+                android:padding="@dimen/padding"
+                android:text="@string/team_b"
                 android:textColor="#424242"
-                android:textSize="18dp"/>
+                android:textSize="@dimen/titletext"/>
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="80dp"
+                android:layout_height="@dimen/logoheight"
                 android:layout_gravity="right"
                 android:src="@drawable/ipswich"/>
 
@@ -172,10 +171,10 @@
                 android:fontFamily="sans-serif-light"
                 android:gravity="left"
                 android:paddingBottom="@dimen/paddingBottom"
-                android:paddingLeft="12dp"
+                android:paddingLeft="@dimen/scorePadding"
                 android:text="0"
                 android:textColor="#000000"
-                android:textSize="56dp"/>
+                android:textSize="@dimen/scoreText"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -191,7 +190,7 @@
                     android:padding="8dp"
                     android:text="@string/foul"
                     android:textColor="#424242"
-                    android:textSize="15dp"/>
+                    android:textSize="@dimen/secondaryText"/>
 
                 <TextView
                     android:id="@+id/team_b_foul"
@@ -201,7 +200,7 @@
                     android:gravity="center"
                     android:text="0"
                     android:textColor="#424242"
-                    android:textSize="15dp"/>
+                    android:textSize="@dimen/secondaryText"/>
 
             </LinearLayout>
 
@@ -219,7 +218,7 @@
                     android:padding="8dp"
                     android:text="@string/penalty"
                     android:textColor="#424242"
-                    android:textSize="15dp"/>
+                    android:textSize="@dimen/secondaryText"/>
 
                 <TextView
                     android:id="@+id/team_b_penalty"
@@ -227,39 +226,38 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:fontFamily="sans-serif-medium"
-
                     android:text="0"
                     android:textColor="#424242"
-                    android:textSize="15dp"/>
+                    android:textSize="@dimen/secondaryText"/>
 
             </LinearLayout>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginBottom="@dimen/buttonMarginBottom"
+                android:layout_marginLeft="@dimen/buttonMarginLeft"
+                android:layout_marginRight="@dimen/buttonMarginRight"
                 android:onClick="addGoalForTeamB"
-                android:text="Goal"/>
+                android:text="@string/goal_button"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginBottom="@dimen/buttonMarginBottom"
+                android:layout_marginLeft="@dimen/buttonMarginLeft"
+                android:layout_marginRight="@dimen/buttonMarginRight"
                 android:onClick="addFoulForTeamB"
-                android:text="Foul"/>
+                android:text="@string/foul_button"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginBottom="@dimen/buttonMarginBottom"
+                android:layout_marginLeft="@dimen/buttonMarginLeft"
+                android:layout_marginRight="@dimen/buttonMarginRight"
                 android:onClick="addPenaltyForTeamB"
-                android:text="Penalty"/>
+                android:text="@string/penalty_button"/>
 
         </LinearLayout>
     </LinearLayout>
@@ -269,10 +267,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="22dp"
-        android:layout_marginRight="22dp"
+        android:layout_marginBottom="@dimen/buttonMarginBottom"
+        android:layout_marginLeft="@dimen/buttonMarginLeft"
+        android:layout_marginRight="@dimen/buttonMarginRight"
         android:onClick="resetScore"
-        android:text="Full Time"/>
+        android:text="@string/reset_button"/>
 
 </RelativeLayout>

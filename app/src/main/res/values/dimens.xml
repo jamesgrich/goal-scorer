@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="paddingBottom">0dp</dimen>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="titletext">18sp</dimen>
+    <dimen name="logoheight">80dp</dimen>
+    <dimen name="scorePadding">12dp</dimen>
+    <dimen name="scoreText">56sp</dimen>
+    <dimen name="secondaryText">15sp</dimen>
+    <dimen name="buttonMarginLeft">24dp</dimen>
+    <dimen name="buttonMarginRight">24dp</dimen>
+    <dimen name="buttonMarginBottom">8dp</dimen>
 </resources>
