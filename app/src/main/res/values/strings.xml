@@ -2,8 +2,8 @@
     <string name="app_name">Goal Scorer</string>
     <string name="team_a">Norwich City</string>
     <string name="team_b">Ipswich Town</string>
-    <string name="penalty">Penalty:</string>
-    <string name="foul">Foul:</string>
+    <string name="penalty">Penalties</string>
+    <string name="foul">Fouls</string>
     <string name="reset_button">Full Time</string>
     <string name="goal_button">Goal</string>
     <string name="foul_button">Foul</string>
