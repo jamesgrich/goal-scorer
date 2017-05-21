@@ -7,10 +7,8 @@ import android.widget.TextView;
 
 import static com.example.android.courtcounter.R.id.team_a_foul;
 import static com.example.android.courtcounter.R.id.team_a_penalty;
-import static com.example.android.courtcounter.R.id.team_a_score;
 import static com.example.android.courtcounter.R.id.team_b_foul;
 import static com.example.android.courtcounter.R.id.team_b_penalty;
-import static com.example.android.courtcounter.R.id.team_b_score;
 
 public class MainActivity extends AppCompatActivity {
     int scoreTeamA = 0;
@@ -19,6 +17,12 @@ public class MainActivity extends AppCompatActivity {
     int foulTeamB = 0;
     int penaltyTeamA = 0;
     int penaltyTeamB = 0;
+    TextView teamAScore;
+    TextView teamBScore;
+    TextView teamAFoul;
+    TextView teamAPenalty;
+    TextView teamBFoul;
+    TextView teamBPenalty;
 
 
 
@@ -26,14 +30,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        teamAScore = (TextView) findViewById(R.id.team_a_score);
+        teamAFoul = (TextView) findViewById(team_a_foul);
+        teamAPenalty = (TextView) findViewById(team_a_penalty);
+        teamBScore = (TextView) findViewById(R.id.team_b_score);
+        teamBFoul = (TextView) findViewById(team_b_foul);
+        teamBPenalty = (TextView) findViewById(team_b_penalty);
     }
 
     /**
      * Displays the given score for Team A.
      */
     public void displayGoalForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(team_a_score);
-        scoreView.setText(String.valueOf(score));
+        teamAScore.setText(String.valueOf(score));
     }
 
     public void addGoalForTeamA (View v) {
@@ -42,8 +51,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayFoulForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(team_a_foul);
-        scoreView.setText(String.valueOf(score));
+        teamAFoul.setText(String.valueOf(score));
     }
 
     public void addFoulForTeamA (View v) {
@@ -52,8 +60,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayPenaltyForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(team_a_penalty);
-        scoreView.setText(String.valueOf(score));
+        teamAPenalty.setText(String.valueOf(score));
     }
 
     public void addPenaltyForTeamA (View v) {
@@ -65,8 +72,7 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Team B.
      */
     public void displayGoalForTeamB(int score) {
-        TextView scoreView = (TextView) findViewById(team_b_score);
-        scoreView.setText(String.valueOf(score));
+        teamBScore.setText(String.valueOf(score));
     }
 
     public void addGoalForTeamB (View v) {
@@ -75,8 +81,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayFoulForTeamB(int score) {
-        TextView scoreView = (TextView) findViewById(team_b_foul);
-        scoreView.setText(String.valueOf(score));
+        teamBFoul.setText(String.valueOf(score));
     }
 
     public void addFoulForTeamB (View v) {
@@ -85,8 +90,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayPenaltyForTeamB(int score) {
-        TextView scoreView = (TextView) findViewById(team_b_penalty);
-        scoreView.setText(String.valueOf(score));
+        teamBPenalty.setText(String.valueOf(score));
     }
 
     public void addPenaltyForTeamB (View v) {
